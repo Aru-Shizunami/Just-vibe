@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quest Board</h1>
+        <button id="add-quest-btn">Add Quest</button>
+        <ul id="quest-list"></ul>
+    </header>
+    <main>
+        <section id="quest-form-section" style="display: none;">
+            <h2>Add New Quest</h2>
+            <form id="quest-form">
+                <label for="quest-title">Title:</label>
+                <input type="text" id="quest-title" name="quest-title" required>
+                <label for="quest-description">Description:</label>
+                <textarea id="quest-description" name="quest-description" required></textarea>
+                <button type="submit">Submit</button>
+                <button type="button" id="cancel-btn">Cancel</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
